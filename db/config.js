@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv'
 dotenv.config()
 
 export const db = new Sequelize(process.env.DBNAME, process.env.DBUSER, process.env.PASSWORD, {
-    host: 'localhost',
+    host: process.env.HOST,
     dialect: 'mariadb'
   });
 
