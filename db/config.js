@@ -4,7 +4,7 @@ dotenv.config()
 
 export const db = new Sequelize(process.env.DBNAME, process.env.DBUSER, process.env.PASSWORD, {
     host: process.env.HOST,
-    dialect: 'mariadb'
+    dialect: 'mysql'
   });
 
 export const dbConnection = async() =>{
